@@ -1,16 +1,44 @@
-# React + Vite
+Sistem Informasi Data Kependudukan Desa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deskripsi Aplikasi
 
-Currently, two official plugins are available:
+Sistem Informasi Data Kependudukan Desa merupakan aplikasi berbasis web (Full-Stack) yang digunakan untuk mengelola data kependudukan secara digital. Aplikasi ini dibangun menggunakan React.js sebagai frontend, Express.js sebagai backend, serta MySQL sebagai database.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Aplikasi memiliki dua fitur utama yang saling berelasi, yaitu:
 
-## React Compiler
+* CRUD Data Kartu Keluarga
+* CRUD Data Penduduk
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Data penduduk terhubung dengan data kartu keluarga melalui relasi database sehingga memudahkan proses pengelolaan data.
 
-## Expanding the ESLint configuration
+Teknologi yang Digunakan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js (Frontend)
+* Express.js (Backend)
+* MySQL (Database)
+* Axios
+* Node.js
+
+Cara Menjalankan Backend
+
+1. Buka Terminal.
+2. Masuk ke folder backend.
+cd backend
+3. Install dependency.
+npm install
+4. Jalankan server.
+npm run dev
+Server akan berjalan pada:
+http://localhost:5001
+
+Cara Menjalankan Frontend
+
+1. Buka Terminal baru.
+2. Masuk ke folder frontend.
+cd frontend
+3. Install dependency.
+npm install
+4. Jalankan aplikasi.
+npm run dev
+Frontend akan berjalan pada:
+http://localhost:5173
